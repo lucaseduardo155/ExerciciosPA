@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script language=javascript>
+            x =parseInt(prompt("informe um numero"))
+            i = 1
+            soma = 0
+            while (i < x)
+            {
+                resto = (x % i)
+                if(resto == 0)
+                {
+                    soma = soma + i
+                }
+                i++
+            }
+            if(soma == x)
+            document.write("numero perfeito")
+            else
+            document.write("numero nao perfeito")
+
+        </script>
+    </head>
+</html>            

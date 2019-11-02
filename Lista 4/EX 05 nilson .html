@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script language = javascript>
+            x = 1
+            vdolar = 3.99 
+            veuro = 4.44 
+            vlibras = 5.15  
+            while(x==1)
+            {
+                valorf=0
+                document.write('1 - reais para dolares </br>')
+                document.write('2 - dolares para reais </br>')
+                document.write('3 - reais para libras </br>')
+                document.write('4 - libras para reais </br> ')
+                document.write('5 - dolares para libras </br>')
+                document.write('6 - libras para dolares </br>')
+                document.write('7 - FIM </br>')
+                opcao = prompt('qual sua opcao : ')
+                if (opcao != '7')
+                {
+                    valor = parseFloat(prompt('qual o valor total das moedas'))
+                }    
+                switch(opcao)
+                {
+                    case '1':
+                        valorf = parseFloat(valor / vdolar)
+                        break
+                    case '2':
+                        valorf = parseFloat(valor * vdolar)
+                        break
+                    case'3':
+                        valorf = parseFloat(valor / vlibras)
+                        break
+                    case'4':
+                        valorf = parseFloat(valor * vlibras)
+                        break
+                    case'5':
+                        valorf = parseFloat(valor / vlibras)
+                        break
+                    case'6':
+                        valorf = parseFloat(valor * vlibras)
+                        break
+                    case'7':
+                        x = 2
+                        break
+                    default:
+                        document.write('opcao invalida')                       
+                }
+                        document.write('resultado do seu calculo </br>')
+                        document.write(valorf.toFixed(2))
+                        document.write('</br>')
+                }        
+        </script> 
+    </head>
+</html>
+
